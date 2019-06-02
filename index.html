@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Agência de Viagens</title>
 	<link rel="stylesheet" href="assets/styles/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.css">
 </head>
 <body>
@@ -28,19 +29,33 @@
 			</div>
 
 			<div id="consultaPacotes" class="d-flex justify-content-center align-items-end">
-				<div class="formPesquisa" style="z-index: 10;">
-					<span class="origem">
-						Origem
-					</span>
-					<span class="destino">
-						Destino
-					</span>
-					<span class="datas">
-						Ida e Volta
-					</span>
-					<span class="quantidadePessoas">Adultos</span>
-
-					<span class="submitButton"></span>
+				<div class="formPesquisa row no-gutters" style="z-index: 10;">
+					<div class="origem col mr-2">
+						<span><i><label for="origem">informar *</label></i></span>
+						<div>
+							<span><img src="assets/imgs/icon-localization.png" alt="" style="margin-left: -20px;"></span>	
+							<span> <input id="origem" type="text" placeholder="Origem"></span>
+						</div>
+					</div>
+					<div class="destino col mr-2">
+						<span><i><label for="destino">visualizar *</label></i></span>
+						<div>
+							<span> <input type="text" id="destino" placeholder="Praia Destino" ></span>
+						</div>
+					</div>
+					<div class="datas col mr-2" data-target="#dataIda" data-toggle="datetimepicker" >
+						<span><i><label for="dataIda">selecionar ida *</label></i></span>
+						<div>
+							<span> <input type="text" id="dataIda" data-target="#dataIda" class="datetimepicker-input" placeholder="Data de Ida" ></span>
+						</div>
+					</div>
+					<div class="datas col mr-2 " data-target="#dataRetorno" data-toggle="datetimepicker" >
+							<span><i><label for="dataRetorno">selecionar volta</label></i></span>
+							<div>
+								<span> <input type="text" id="dataRetorno" data-target="#dataRetorno" class="datetimepicker-input" placeholder="Data de Retorno" ></span>
+							</div>
+						</div>
+					<span class="submitReserva">Buscar</span>
 				</div>
 			</div>
 
@@ -74,6 +89,30 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
 	<script src="assets/scripts/bootstrap.min.js"></script>
+	<script src="assets/scripts/moment.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+	
 	<script src="assets/scripts/main.js"></script>
+	<script>
+		$(function () {
+	
+			$('#dataIda').datetimepicker({
+				useCurrent: true,
+				locale: 'pt-br',
+				format: 'DD/MM/YYYY'
+			});
+			$('#dataRetorno').datetimepicker({
+				useCurrent: false,
+				locale: 'pt-br',
+				format: 'DD/MM/YYYY'
+			});
+			$("#dataIda").on("change.datetimepicker", function (e) {
+				$('#dataRetorno').datetimepicker('minDate', e.date);
+			});
+			$("#dataRetorno").on("change.datetimepicker", function (e) {
+				$('#dataIda').datetimepicker('maxDate', e.date);
+			});
+    	});
+	</script>
 </body>
 </html>
