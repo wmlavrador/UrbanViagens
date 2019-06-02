@@ -1,12 +1,12 @@
 # UrbanViagens
-WebSite Agência de Pacotes turisticos.
+WebSite Agência de <b>Pacotes Turisticos.</b>
 
 Trabalho do Curso de  Sistemas de Informação, Universidade de Vila Velha.
-#Participantes
+<br><b>#</b>Participantes
 
-Igor Brito<br>
-Joana Carolina<br>
-Ramiro Vargas<br>
+Igor <b>Brito</b><br>
+Joana <b>Carolina</b><br>
+Ramiro <b>Vargas</b><br>
 Roberta<br>
 Tarik<br>
-Wilson Lavrador
+  Wilson <b>Lavrador</b>
