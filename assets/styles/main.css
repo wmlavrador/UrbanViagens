@@ -90,7 +90,8 @@ body {
 	margin-left:10px;
 	min-width: 200px;
 	margin-top:50px;
-	max-width: 220px;	
+	max-width: 220px;
+	display: table;	
 }
 .acomodacoesItem:nth-child(first) {
 	margin-left:0;
@@ -121,6 +122,17 @@ body {
 }
 .vlDiariaLabel {
 	font-size:11px;
+}
+
+
+.contentInsta {
+	border-bottom:3px solid pink;
+	padding-top:10px;
+	width: 100%;
+	margin-bottom:20px;
+}
+
+.contentInsta .item { 
 }
 
 /* Seção de Animações */
