@@ -135,6 +135,20 @@ body {
 .contentInsta .item { 
 }
 
+.footer {
+	margin-top:40px;
+}
+
+.footer .links a{
+	font-size:16px;
+	color:#006DD9;
+	margin-right: 40px;
+}
+.footer .links a:hover {
+	text-decoration: none;
+	color:#E7816A;
+}
+
 /* Seção de Animações */
 @keyframes mudarBackground {
 	0% {
