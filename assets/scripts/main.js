@@ -60,8 +60,8 @@ $(function(){
             var getDataIda = $.urlParam("dataIda");
             var getDataRetorno = $.urlParam("dataRetorno");
 
-            $.get("https://baconipsum.com/api/?callback=?", function(){
-
+            $.get("https://baconipsum.com/api/?callback=?", function(response){
+                $(".descricao").html(response);
             });
             
             $(".recebeDestino").html(getDestino);
