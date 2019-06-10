@@ -63,6 +63,7 @@ body {
 	border-radius: 35px;
 	cursor:pointer;
 	color:white;
+	border:0;
 }
 #consultaPacotes .submitReserva:hover {
 	background:black;
