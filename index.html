@@ -9,12 +9,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/viewslider.css">
+	<link rel="stylesheet" href="assets/styles/autocomplete.css">
 </head>
 <body>
 	
-	<div id="innerHeader">
-
-	</div>
+	<div id="innerHeader"></div>
 
 	<!-- Segunda seção do site. -->
 	<section>
@@ -55,38 +54,17 @@
 		</div>
 	</section>
 
-	<section id="innerFooter">
+	<section id="innerFooter"></section>
 
-	</section>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
 	<script src="assets/scripts/lib/bootstrap.min.js"></script>
 	<script src="assets/scripts/lib/moment.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 	<script src="assets/scripts/lib/viewslider.js"></script>
-	
+	<script src="assets/scripts/destinos.js"></script>
+
 	<script src="assets/scripts/main.js"></script>
-	<script>
-		$(function () {	
-			$('#dataIda').datetimepicker({
-				useCurrent: true,
-				locale: 'pt-br',
-				format: 'DD/MM/YYYY'
-			});
-			$('#dataRetorno').datetimepicker({
-				useCurrent: false,
-				locale: 'pt-br',
-				format: 'DD/MM/YYYY'
-			});
-			$("#dataIda").on("change.datetimepicker", function (e) {
-				$('#dataRetorno').datetimepicker('minDate', e.date);
-			});
-			$("#dataRetorno").on("change.datetimepicker", function (e) {
-				$('#dataIda').datetimepicker('maxDate', e.date);
-			});
-    	});
-	</script>
 </body>
 </html>
