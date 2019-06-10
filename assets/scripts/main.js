@@ -1,4 +1,8 @@
 $(function(){
+
+    $("#innerHeader").load("/parts/headerPart.html");
+    $("#innerFooter").load("/parts/footerPart.html");
+
     var jsonAcomodacoes = {
         0:{
             cidadeAcomodacao: "São Paulo",
@@ -48,4 +52,23 @@ $(function(){
         var acomodacoesItem = '<div class="acomodacoesItem mt-5 mb-5 col "><div class="itemHead"> <span><img src="assets/imgs/icon-gps.png" alt=""></span> <span class="itemTitle">'+value.cidadeAcomodacao+',</span> <span class="vlDiaria">R$ '+value.valorAcomodacao+'</span> <span class="vlDiariaLabel">/diaria</span></div><div class="itemBody" style="background:url('+value.fotoAcomodacao+') no-repeat"> </div><div class="itemBottom d-flex"><div class="rating col-md-7"> '+ratingAcomodacao+' </div><div class="buttonMore col">Detalhes</div></div></div>';
         $("#acomodacoesSection").append(acomodacoesItem);
     });
-})
+
+    $(".menuOpen").click(function(){
+        $(this).hide();
+        $(".menuVertical").show();
+        $(".menuCancel").show();
+    });
+
+    $(".menuCancel").click(function(){
+        $(this).hide();
+        $(".menuOpen").show();
+        $(".menuVertical").hide();
+    });
+
+    $(".menuVertical ul li").click(function(){
+        $(this).hide();
+        $(".menuOpen").show();
+        $(".menuVertical").hide();
+    });
+
+});

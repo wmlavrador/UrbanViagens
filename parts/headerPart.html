@@ -1,0 +1,54 @@
+<div class="full-container sectionHead position-relative">
+    <div class="container h-100">
+
+        <div id="menuHeader" class="d-flex justify-content-between">
+            <div class="logo pull-left">
+                <img src="assets/imgs/logo.png">
+            </div>
+
+            <div class="menu pull-right row align-items-center">
+                <div class="col">MENU</div>
+                <div class="col position-relative">
+                    <img src="assets/imgs/menu-humburger.png" alt="Menu de Opções" class="menuOpen">
+                    <img src="assets/imgs/cancel.png" height="37" class="menuCancel">
+                </div>
+            </div>
+        </div>
+
+        <div id="consultaPacotes" class="d-flex justify-content-center align-items-end">
+            <div class="formPesquisa row no-gutters" style="z-index: 10;">
+                <div class="origem col mr-2">
+                    <span><i><label for="origem">informar *</label></i></span>
+                    <div>
+                        <span><img src="assets/imgs/icon-localization.png" alt="" style="margin-left: -20px;"></span>
+                        <span> <input id="origem" type="text" placeholder="Origem"></span>
+                    </div>
+                </div>
+                <div class="destino col mr-2">
+                    <span><i><label for="destino">visualizar *</label></i></span>
+                    <div>
+                        <span> <input type="text" id="destino" placeholder="Praia Destino"></span>
+                    </div>
+                </div>
+                <div class="datas col mr-2" data-target="#dataIda" data-toggle="datetimepicker">
+                    <span><i><label for="dataIda">selecionar ida *</label></i></span>
+                    <div>
+                        <span> <input type="text" id="dataIda" data-target="#dataIda" class="datetimepicker-input"
+                                placeholder="Data de Ida"></span>
+                    </div>
+                </div>
+                <div class="datas col mr-2 " data-target="#dataRetorno" data-toggle="datetimepicker">
+                    <span><i><label for="dataRetorno">selecionar volta</label></i></span>
+                    <div>
+                        <span> <input type="text" id="dataRetorno" data-target="#dataRetorno"
+                                class="datetimepicker-input" placeholder="Data de Retorno"></span>
+                    </div>
+                </div>
+                <span class="submitReserva">Buscar</span>
+            </div>
+        </div>
+
+    </div>
+    <img src="assets/imgs/mask-background.png" alt="" class="img-fluid"
+        style="position:absolute; bottom:0; z-index: 1;">
+</div>
