@@ -19,7 +19,7 @@
 		
 				<div id="menuHeader" class="d-flex justify-content-between">
 					<div class="logo pull-left">
-						<img src="assets/imgs/logo.png">
+						<a href="index.html"><img src="assets/imgs/logo.png"></a>
 					</div>
 		
 					<div class="menu pull-right row align-items-center">
@@ -37,26 +37,26 @@
 							<span><i><label for="origem">informar *</label></i></span>
 							<div>
 								<span><img src="assets/imgs/icon-localization.png" alt="" style="margin-left: -20px;"></span>
-								<span> <input id="origem" type="text" name="origem"  placeholder="Origem"></span>
+								<span> <input id="origem" type="text" name="origem" required  placeholder="Origem"></span>
 							</div>
 						</div>
 						<div class="destino col mr-2 position-relative">
 							<span><i><label for="destino">visualizar *</label></i></span>
 							<div>
-								<span class="autocomplete"> <input type="text" name="destino"  id="destino" placeholder="Cidade Destino"></span>
+								<span class="autocomplete"> <input type="text" name="destino" required id="destino" placeholder="Cidade Destino"></span>
 							</div>
 						</div>
 						<div class="datas col mr-2" data-target="#dataIda" data-toggle="datetimepicker">
 							<span><i><label for="dataIda">selecionar ida *</label></i></span>
 							<div>
-								<span> <input type="text" id="dataIda" name="dataIda"  data-target="#dataIda" class="datetimepicker-input"
+								<span> <input type="text" id="dataIda" name="dataIda" required data-target="#dataIda" class="datetimepicker-input"
 										placeholder="Data de Ida"></span>
 							</div>
 						</div>
 						<div class="datas col mr-2 " data-target="#dataRetorno" data-toggle="datetimepicker">
 							<span><i><label for="dataRetorno">selecionar volta</label></i></span>
 							<div>
-								<span> <input type="text" id="dataRetorno"  name="dataRetorno" data-target="#dataRetorno"
+								<span> <input type="text" id="dataRetorno" required  name="dataRetorno" data-target="#dataRetorno"
 										class="datetimepicker-input" placeholder="Data de Retorno"></span>
 							</div>
 						</div>
@@ -213,9 +213,9 @@
 		<section>
 			<div class="footer container mt-5 d-flex justify-content-between">
 				<div class="links">
-					<a href="">termos de privacidade</a>
-					<a href="">fale conosco</a>
-					<a href="">termos de uso</a>
+					<a href="https://google.com.br" target="_blank">termos de privacidade</a>
+					<a href="mailto:equipesomar@somar.com.br">fale conosco</a>
+					<a href="https://google.com.br" target="_blank">termos de uso</a>
 				</div>
 				<div class="copyright">Copyright © todos direitos reservados à Somar</div>
 			</div>
@@ -224,10 +224,10 @@
 		
 		<div class="menuVertical">
 			<ul class="menu-list">
-				<li><a href="">Home</a></li>
-				<li><a href="">Acomodações</a></li>
-				<li><a href="">Pacotes</a></li>
-				<li><a href="">Fale Conosco</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#acomodacoes">Acomodações</a></li>
+				<li><a href="#consultaPacotes">Reservar</a></li>
+				<li><a href="mailto:equipesomar@somar.com.br">Fale Conosco</a></li>
 			</ul>
 		</div>
 	</section>

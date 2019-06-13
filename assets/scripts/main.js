@@ -1,8 +1,6 @@
-$(function(){
+﻿$(function(){
 
-    $("#innerHeader").load("parts/headerPart.html");
-    $("#innerFooter").load("parts/footerPart.html");
-    
+   
     setTimeout(function(){
         // array com as acomodações disponíveis.
         var jsonAcomodacoes = {
